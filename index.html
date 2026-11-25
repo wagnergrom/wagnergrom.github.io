@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>将校花灌成泡芙 - 校园青春,甜美视频社区 | 泡芙青年影像</title>
+<meta name="description" content="将校花灌成泡芙 —— 泡芙青年影像是一个聚焦校园青春与生活甜系的视频品牌，记录真实、温暖、有活力的年轻故事。">
+<style>
+  :root{
+    --cream:#fff8f0;
+    --peach:#ffd9c0;
+    --rose:#f78ca0;
+    --deep:#4a2c3a;
+    --plum:#7a3b52;
+    --gold:#f5b971;
+    --mint:#bfe3d0;
+    --ink:#3a2530;
+    --soft-shadow:0 18px 40px rgba(122,59,82,.14);
+    --radius:22px;
+    --maxw:1180px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.75;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  section{padding:88px 0;position:relative;}
+  h2{
+    font-size:clamp(26px,3.4vw,40px);
+    letter-spacing:.5px;
+    margin-bottom:14px;
+    color:var(--deep);
+  }
+  h3{font-size:19px;color:var(--plum);margin-bottom:8px;}
+  p{color:#5c4450;}
+  .eyebrow{
+    display:inline-block;
+    font-size:13px;
+    letter-spacing:3px;
+    color:var(--rose);
+    text-transform:uppercase;
+    margin-bottom:12px;
+    font-weight:700;
+  }
+  .lead{font-size:17px;color:#6c5260;max-width:760px;}
+
+  /* ====== NAV ====== */
+  header.site-nav{
+    position:sticky;top:0;z-index:60;
+    backdrop-filter:blur(14px);
+    background:rgba(255,248,240,.82);
+    border-bottom:1px solid rgba(247,140,160,.18);
+  }
+  .nav-inner{
+    max-width:var(--maxw);margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 24px;
+  }
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-logo{
+    width:44px;height:44px;border-radius:14px;
+    background:linear-gradient(140deg,var(--rose),var(--gold));
+    display:grid;place-items:center;
+    color:#fff;font-weight:800;font-size:20px;
+    box-shadow:0 8px 20px rgba(247,140,160,.35);
+  }
+  .brand-name{font-weight:800;font-size:18px;color:var(--deep);letter-spacing:.5px;}
+  .brand-name span{color:var(--rose);}
+  nav.links{display:flex;gap:26px;font-size:15px;font-weight:600;color:#6b4d5b;}
+  nav.links a{position:relative;padding:4px 0;transition:color .25s;}
+  nav.links a::after{
+    content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;
+    background:var(--rose);border-radius:2px;transition:width .3s;
+  }
+  nav.links a:hover{color:var(--rose);}
+  nav.links a:hover::after{width:100%;}
+  .nav-cta{
+    background:var(--rose);color:#fff;padding:10px 22px;border-radius:999px;
+    font-weight:700;font-size:14px;box-shadow:0 10px 24px rgba(247,140,160,.4);
+    transition:transform .25s,box-shadow .25s;
+  }
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(247,140,160,.5);}
+  .menu-btn{display:none;background:none;border:none;font-size:24px;color:var(--plum);cursor:pointer;}
+
+  /* ====== HERO ====== */
+  .hero{
+    position:relative;
+    padding:70px 0 100px;
+    overflow:hidden;
+    background:
+      radial-gradient(circle at 88% 12%,rgba(245,185,113,.28),transparent 42%),
+      radial-gradient(circle at 12% 82%,rgba(247,140,160,.22),transparent 46%),
+      var(--cream);
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(34px,5.4vw,64px);
+    line-height:1.16;
+    color:var(--deep);
+    letter-spacing:1px;
+    margin-bottom:20px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    background:linear-gradient(120deg,var(--rose),var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p.lead{margin-bottom:30px;}
+  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:34px;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:14px 30px;border-radius:999px;font-weight:700;font-size:15px;
+    transition:transform .25s,box-shadow .25s,background .25s;
+    cursor:pointer;border:none;
+  }
+  .btn-primary{background:var(--deep);color:#fff;box-shadow:0 14px 30px rgba(74,44,58,.3);}
+  .btn-primary:hover{transform:translateY(-3px);background:var(--plum);}
+  .btn-ghost{background:rgba(255,255,255,.7);color:var(--plum);border:1.5px solid rgba(247,140,160,.4);}
+  .btn-ghost:hover{transform:translateY(-3px);background:#fff;}
+  .hero-stats{display:flex;gap:36px;flex-wrap:wrap;}
+  .hero-stats .stat b{display:block;font-size:26px;color:var(--plum);font-weight:800;}
+  .hero-stats .stat span{font-size:13px;color:#8a6b78;}
+
+  .hero-visual{position:relative;aspect-ratio:1/1;}
+  .orb{
+    position:absolute;border-radius:50%;filter:blur(2px);
+    animation:float 7s ease-in-out infinite;
+  }
+  .orb.o1{width:78%;height:78%;top:4%;left:10%;
+    background:linear-gradient(145deg,var(--peach),var(--rose));
+    box-shadow:var(--soft-shadow);animation-delay:0s;}
+  .orb.o2{width:40%;height:40%;bottom:2%;left:-4%;
+    background:linear-gradient(145deg,var(--gold),var(--peach));
+    box-shadow:var(--soft-shadow);animation-delay:1.4s;}
+  .orb.o3{width:30%;height:30%;top:0;right:2%;
+    background:linear-gradient(145deg,var(--mint),#8fd0b4);
+    box-shadow:var(--soft-shadow);animation-delay:2.6s;}
+  @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-16px);}}
+  .play-badge{
+    position:absolute;inset:0;margin:auto;width:104px;height:104px;border-radius:50%;
+    background:rgba(255,255,255,.85);display:grid;place-items:center;
+    box-shadow:0 20px 40px rgba(122,59,82,.25);
+    cursor:pointer;transition:transform .3s;
+  }
+  .play-badge:hover{transform:scale(1.08);}
+  .play-badge::before{
+    content:"";border-left:26px solid var(--rose);
+    border-top:16px solid transparent;border-bottom:16px solid transparent;
+    margin-left:8px;
+  }
+  .hero-note{
+    position:absolute;bottom:-8px;right:0;background:#fff;border-radius:16px;
+    padding:12px 18px;font-size:13px;color:var(--plum);font-weight:600;
+    box-shadow:var(--soft-shadow);
+  }
+
+  /* ====== MARQUEE ====== */
+  .marquee{
+    background:var(--deep);color:var(--cream);overflow:hidden;
+    padding:16px 0;white-space:nowrap;
+  }
+  .marquee-track{display:inline-flex;gap:44px;animation:scroll 26s linear infinite;}
+  .marquee-track span{font-size:15px;letter-spacing:2px;opacity:.86;}
+  .marquee-track span::before{content:"✦";color:var(--gold);margin-right:14px;}
+  @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+  /* ====== SECTION HEAD ====== */
+  .sec-head{max-width:760px;margin-bottom:46px;}
+
+  /* ====== FEATURE CARDS ====== */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .card{
+    background:#fff;border-radius:var(--radius);padding:34px 28px;
+    box-shadow:0 12px 30px rgba(122,59,82,.08);
+    transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden;
+  }
+  .card::before{
+    content:"";position:absolute;top:0;left:0;width:100%;height:5px;
+    background:linear-gradient(90deg,var(--rose),var(--gold));opacity:0;transition:opacity .3s;
+  }
+  .card:hover{transform:translateY(-8px);box-shadow:0 24px 48px rgba(122,59,82,.16);}
+  .card:hover::before{opacity:1;}
+  .card-icon{
+    width:56px;height:56px;border-radius:16px;display:grid;place-items:center;
+    font-size:26px;margin-bottom:20px;
+    background:linear-gradient(140deg,rgba(247,140,160,.18),rgba(245,185,113,.22));
+  }
+  .card p{font-size:15px;color:#6c5260;}
+
+  /* ====== WORKS ====== */
+  .works{background:linear-gradient(180deg,#fff,#fff6ee);}
+  .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .work{
+    background:#fff;border-radius:var(--radius);overflow:hidden;
+    box-shadow:0 14px 34px rgba(122,59,82,.1);transition:transform .3s,box-shadow .3s;
+    cursor:pointer;
+  }
+  .work:hover{transform:translateY(-8px);box-shadow:0 26px 52px rgba(122,59,82,.18);}
+  .thumb{position:relative;aspect-ratio:16/10;overflow:hidden;}
+  .thumb svg{width:100%;height:100%;display:block;transition:transform .5s;}
+  .work:hover .thumb svg{transform:scale(1.06);}
+  .badge{
+    position:absolute;top:14px;left:14px;background:rgba(74,44,58,.82);color:#fff;
+    font-size:12px;padding:5px 12px;border-radius:999px;letter-spacing:1px;
+  }
+  .duration{
+    position:absolute;bottom:12px;right:12px;background:rgba(0,0,0,.62);color:#fff;
+    font-size:12px;padding:3px 10px;border-radius:8px;
+  }
+  .work-body{padding:20px 22px 24px;}
+  .work-body h3{font-size:17px;color:var(--deep);margin-bottom:8px;}
+  .work-body p{font-size:14px;color:#7a606c;margin-bottom:14px;}
+  .work-meta{display:flex;justify-content:space-between;font-size:13px;color:#a1849a;}
+
+  /* ====== SERIES / TIMELINE ====== */
+  .series{background:linear-gradient(180deg,#fff6ee,#fff);}
+  .timeline{position:relative;margin-top:20px;}
+  .timeline::before{
+    content:"";position:absolute;left:22px;top:8px;bottom:8px;width:2px;
+    background:linear-gradient(180deg,var(--rose),var(--gold),var(--mint));
+    border-radius:2px;
+  }
+  .tl-item{
+    position:relative;padding:0 0 38px 70px;
+  }
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-dot{
+    position:absolute;left:10px;top:4px;width:26px;height:26px;border-radius:50%;
+    background:#fff;border:4px solid var(--rose);box-shadow:0 6px 16px rgba(247,140,160,.4);
+    display:grid;place-items:center;font-size:11px;font-weight:800;color:var(--rose);
+  }
+  .tl-item:nth-child(2) .tl-dot{border-color:var(--gold);color:var(--gold);box-shadow:0 6px 16px rgba(245,185,113,.4);}
+  .tl-item:nth-child(3) .tl-dot{border-color:var(--mint);color:#4f9c7a;box-shadow:0 6px 16px rgba(143,208,180,.4);}
+  .tl-item:nth-child(4) .tl-dot{border-color:var(--plum);color:var(--plum);box-shadow:0 6px 16px rgba(122,59,82,.3);}
+  .tl-item h3{color:var(--deep);}
+  .tl-item .tag{
+    display:inline-block;font-size:12px;color:var(--rose);font-weight:700;
+    letter-spacing:1px;margin-bottom:6px;
+  }
+  .tl-item p{font-size:15px;}
+
+  /* ====== COMMUNITY ====== */
+  .community{background:var(--deep);color:var(--cream);}
+  .community h2{color:#fff;}
+  .community .lead{color:#e8d4dd;}
+  .community .eyebrow{color:var(--gold);}
+  .comm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px;}
+  .comm-item{
+    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);
+    border-radius:18px;padding:26px 22px;transition:background .3s,transform .3s;
+  }
+  .comm-item:hover{background:rgba(255,255,255,.13);transform:translateY(-6px);}
+  .comm-item b{display:block;font-size:32px;color:var(--gold);font-weight:800;margin-bottom:6px;}
+  .comm-item span{font-size:14px;color:#e2c9d4;}
+
+  /* ====== QUOTES ====== */
+  .quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px;}
+  .quote{
+    background:#fff;border-radius:var(--radius);padding:32px 28px;
+    box-shadow:0 12px 30px rgba(122,59,82,.08);position:relative;
+  }
+  .quote::before{
+    content:"“";position:absolute;top:6px;left:20px;font-size:64px;color:rgba(247,140,160,.22);
+    font-family:Georgia,serif;line-height:1;
+  }
+  .quote p{font-size:15px;color:#5c4450;margin-bottom:18px;position:relative;z-index:1;}
+  .quote-author{display:flex;align-items:center;gap:12px;}
+  .avatar{
+    width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+    font-weight:800;color:#fff;font-size:15px;
+    background:linear-gradient(140deg,var(--rose),var(--gold));
+  }
+  .quote-author small{display:block;color:#a1849a;font-size:12px;}
+  .quote-author b{color:var(--plum);font-size:14px;}
+
+  /* ====== CTA ====== */
+  .cta-band{
+    background:linear-gradient(120deg,var(--rose),var(--gold));
+    border-radius:32px;padding:60px 48px;text-align:center;color:#fff;
+    box-shadow:0 26px 60px rgba(247,140,160,.35);position:relative;overflow:hidden;
+  }
+  .cta-band::before,.cta-band::after{
+    content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.14);
+  }
+  .cta-band::before{width:220px;height:220px;top:-80px;right:-40px;}
+  .cta-band::after{width:160px;height:160px;bottom:-70px;left:-30px;}
+  .cta-band h2{color:#fff;position:relative;z-index:1;}
+  .cta-band p{color:rgba(255,255,255,.92);max-width:620px;margin:0 auto 30px;position:relative;z-index:1;}
+  .cta-band .btn-primary{background:#fff;color:var(--plum);position:relative;z-index:1;}
+  .cta-band .btn-primary:hover{background:var(--cream);}
+
+  /* ====== FOOTER ====== */
+  footer{
+    background:var(--deep);color:#d9c2cc;padding:64px 0 30px;margin-top:0;
+  }
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;margin-bottom:44px;}
+  .foot-brand .brand-name{color:#fff;}
+  .foot-brand p{color:#b99cab;font-size:14px;margin-top:14px;max-width:280px;}
+  .foot-col h4{color:#fff;font-size:15px;margin-bottom:16px;letter-spacing:1px;}
+  .foot-col a{display:block;font-size:14px;color:#b99cab;margin-bottom:10px;transition:color .25s;}
+  .foot-col a:hover{color:var(--gold);}
+  .foot-bottom{
+    border-top:1px solid rgba(255,255,255,.1);padding-top:22px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-size:13px;color:#a0828f;
+  }
+
+  /* ====== REVEAL ====== */
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s;}
+  .reveal.show{opacity:1;transform:none;}
+
+  /* ====== MODAL ====== */
+  .modal{
+    position:fixed;inset:0;background:rgba(58,37,48,.72);z-index:200;
+    display:flex;align-items:center;justify-content:center;padding:24px;
+    opacity:0;pointer-events:none;transition:opacity .3s;
+  }
+  .modal.open{opacity:1;pointer-events:auto;}
+  .modal-box{
+    background:#fff;border-radius:24px;max-width:560px;width:100%;
+    padding:36px 32px;position:relative;transform:translateY(20px);transition:transform .3s;
+    max-height:86vh;overflow-y:auto;
+  }
+  .modal.open .modal-box{transform:none;}
+  .modal-close{
+    position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:50%;
+    border:none;background:#f6ecef;color:var(--plum);font-size:18px;cursor:pointer;
+    display:grid;place-items:center;transition:background .2s;
+  }
+  .modal-close:hover{background:var(--peach);}
+  .modal-box h3{font-size:22px;color:var(--deep);margin-bottom:8px;}
+  .modal-box .m-sub{color:var(--rose);font-weight:700;font-size:14px;margin-bottom:18px;}
+  .modal-box .m-body{font-size:15px;color:#5c4450;line-height:1.9;}
+  .modal-box .m-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px;}
+  .modal-box .m-tags span{
+    font-size:12px;background:#fbe9ee;color:var(--rose);padding:5px 12px;border-radius:999px;font-weight:600;
+  }
+
+  /* ====== RESPONSIVE ====== */
+  @media(max-width:980px){
+    .hero-grid{grid-template-columns:1fr;gap:40px;}
+    .hero-visual{max-width:420px;margin:0 auto;}
+    .grid-3{grid-template-columns:1fr 1fr;}
+    .work-grid{grid-template-columns:1fr 1fr;}
+    .comm-grid{grid-template-columns:1fr 1fr;}
+    .quote-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:680px){
+    nav.links{display:none;}
+    .menu-btn{display:block;}
+    .nav-cta{display:none;}
+    .grid-3,.work-grid,.comm-grid{grid-template-columns:1fr;}
+    .hero{padding:44px 0 70px;}
+    section{padding:64px 0;}
+    .foot-grid{grid-template-columns:1fr;}
+    .cta-band{padding:44px 26px;}
+    .hero-stats{gap:24px;}
+  }
+
+  /* mobile drawer */
+  .drawer{
+    position:fixed;inset:0;background:rgba(58,37,48,.55);z-index:150;
+    opacity:0;pointer-events:none;transition:opacity .3s;
+  }
+  .drawer.open{opacity:1;pointer-events:auto;}
+  .drawer-panel{
+    position:absolute;top:0;right:0;width:78%;max-width:320px;height:100%;
+    background:var(--cream);padding:80px 30px 30px;transform:translateX(100%);
+    transition:transform .35s;box-shadow:-20px 0 50px rgba(0,0,0,.2);
+  }
+  .drawer.open .drawer-panel{transform:none;}
+  .drawer-panel a{display:block;font-size:17px;font-weight:700;color:var(--plum);padding:14px 0;border-bottom:1px solid rgba(247,140,160,.2);}
+  .drawer-panel .btn{width:100%;justify-content:center;margin-top:26px;}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <div class="brand-logo">泡</div>
+      <div class="brand-name">泡芙<span>青年</span>影像</div>
+    </a>
+    <nav class="links">
+      <a href="#about">关于我们</a>
+      <a href="#works">作品精选</a>
+      <a href="#series">品牌企划</a>
+      <a href="#community">社区</a>
+      <a href="#voices">口碑</a>
+    </nav>
+    <a class="nav-cta" href="#join">加入创作</a>
+    <button class="menu-btn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <div class="drawer-panel">
+    <a href="#about">关于我们</a>
+    <a href="#works">作品精选</a>
+    <a href="#series">品牌企划</a>
+    <a href="#community">社区</a>
+    <a href="#voices">口碑</a>
+    <a href="#join">加入创作</a>
+  </div>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Sweet Video Studio · 青春甜系影像</span>
+        <h1>将校花灌成泡芙</h1>
+        <p class="lead">我们相信每一段青春都值得被温柔记录。泡芙青年影像以「将校花灌成泡芙」为品牌母题，用镜头把校园里最甜的瞬间、最真实的笑容、最炽热的成长，统统装进一颗会爆浆的泡芙里。这里没有剧本化的表演，只有被认真对待的年轻日常。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works">▶ 观看品牌片</a>
+          <a class="btn btn-ghost" href="#join">成为共创者</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>1200+</b><span>原创短片</span></div>
+          <div class="stat"><b>86万</b><span>社区伙伴</span></div>
+          <div class="stat"><b>34</b><span>合作高校</span></div>
+          <div class="stat"><b>2.4亿</b><span>累计播放</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb o1"></div>
+        <div class="orb o2"></div>
+        <div class="orb o3"></div>
+        <div class="play-badge" id="heroPlay"></div>
+        <div class="hero-note">🎬 今日更新 · 泡芙日记 Vol.7</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>校园日常</span><span>甜系短剧</span><span>毕业季企划</span><span>社团纪录</span>
+      <span>城市漫游</span><span>青春访谈</span><span>生活美学</span><span>创作工作坊</span>
+      <span>校园日常</span><span>甜系短剧</span><span>毕业季企划</span><span>社团纪录</span>
+      <span>城市漫游</span><span>青春访谈</span><span>生活美学</span><span>创作工作坊</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">About The Brand</span>
+        <h2>把青春做成一颗会爆浆的泡芙</h2>
+        <p class="lead">「将校花灌成泡芙」不只是一个名字，它是我们理解青春的方式——外壳轻盈酥脆，内里绵密滚烫。泡芙青年影像成立于校园，成长于社区，专注拍摄真实、甜而不腻的青年故事，让每一位普通学生都能在镜头前拥有高光时刻。</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">🎥</div>
+          <h3>真实记录</h3>
+          <p>拒绝摆拍与套路，我们跟拍真实的课堂、社团、寝室与操场。镜头里的每个人都是自己故事的主角，情绪无需演，青春自带甜度。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🍰</div>
+          <h3>甜系美学</h3>
+          <p>奶油色调、柔和光线、轻盈剪辑，形成泡芙独有的视觉语言。我们把「将校花灌成泡芙」的比喻，翻译成一套温暖又高级的影像风格。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h3>社区共创</h3>
+          <p>开放选题、开放投稿、开放工作坊。每一个学生都能提交故事线索，参与拍摄与剪辑，让品牌始终拥有持续生长的社区活力。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌱</div>
+          <h3>成长陪伴</h3>
+          <p>从大一入学到大四毕业，我们记录同一批人的四年变化。时间是最甜的馅料，而泡芙青年影像愿意做那个长期陪伴的旁观者。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📖</div>
+          <h3>故事工坊</h3>
+          <p>定期举办编剧、摄影、剪辑训练营，把「将校花灌成泡芙」的创作方法沉淀为可复制的手册，帮助更多年轻人拿起相机。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3>高校联盟</h3>
+          <p>与三十余所高校建立影像合作，形成校园创作者网络。品牌不只是出品方，更是青年影像生态的连接者与守护者。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" class="works reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Selected Works</span>
+        <h2>作品精选 · 每一帧都甜得有理由</h2>
+        <p class="lead">从甜系短剧到纪实访谈，从毕业季企划到城市漫游，泡芙青年影像持续输出多元内容。点击任意作品，查看创作手记与幕后故事。</p>
+      </div>
+      <div class="work-grid">
+
+        <article class="work" data-title="将校花灌成泡芙 Vol.1" data-sub="品牌同名短片 · 开场篇" data-body="这是「将校花灌成泡芙」系列的第一支品牌短片。我们用了整整一个春天，跟拍三位不同院系的女生，从清晨的图书馆到深夜的排练厅，记录她们如何把平凡日子过成会爆浆的甜点。全片采用自然光与手持镜头，保留呼吸感与真实颗粒。" data-tags="校园,甜系,纪实">
+          <div class="thumb">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9c0"/><stop offset="1" stop-color="#f78ca0"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#g1)"/>
+              <circle cx="120" cy="90" r="52" fill="#fff" opacity=".55"/>
+              <circle cx="290" cy="160" r="70" fill="#fff" opacity=".32"/>
+              <path d="M0 200 Q100 150 200 195 T400 190 L400 250 L0 250Z" fill="#fff" opacity=".45"/>
+              <circle cx="200" cy="120" r="30" fill="#fff" opacity=".8"/>
+              <polygon points="192,108 192,132 214,120" fill="#f78ca0"/>
+            </svg>
+            <span class="badge">品牌同名</span>
+            <span class="duration">12:48</span>
+          </div>
+          <div class="work-body">
+            <h3>将校花灌成泡芙 Vol.1</h3>
+            <p>三位女生，一个春天，把日常过成甜点的纪实开场。</p>
+            <div class="work-meta"><span>校园纪实</span><span>2024 · 春</span></div>
+          </div>
+        </article>
+
+        <article class="work" data-title="奶油色午后" data-sub="甜系短剧 · 第三季" data-body="午后两点的教室，阳光斜斜落在课桌上。这是一支没有台词情绪的甜系短剧，全部靠光影、呼吸和眼神推进。我们希望观众看完后，会想起自己学生时代那个安静的、发着光的下午。" data-tags="短剧,美学,光影">
+          <div class="thumb">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5b971"/><stop offset="1" stop-color="#ffd9c0"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#g2)"/>
+              <rect x="60" y="150" width="280" height="14" rx="7" fill="#fff" opacity=".7"/>
+              <circle cx="150" cy="95" r="40" fill="#fff" opacity=".6"/>
+              <rect x="230" y="60" width="90" height="90" rx="12" fill="#fff" opacity=".35"/>
+              <circle cx="320" cy="200" r="56" fill="#fff" opacity=".25"/>
+            </svg>
+            <span class="badge">短剧</span>
+            <span class="duration">08:20</span>
+          </div>
+          <div class="work-body">
+            <h3>奶油色午后</h3>
+            <p>没有台词的情绪短剧，用光影讲述一个安静的下午。</p>
+            <div class="work-meta"><span>甜系短剧</span><span>2024 · 夏</span></div>
+          </div>
+        </article>
+
+        <article class="work" data-title="毕业那天我们没说再见" data-sub="毕业季企划 · 长篇纪录" data-body="「将校花灌成泡芙」团队回到母校，跟拍四个即将毕业的年轻人。散伙饭、打包行李、最后一次走过操场，所有没说出口的话，都留在了镜头里。这支片子后来成为许多学校的毕业放映片。" data-tags="毕业季,纪录,青春">
+          <div class="thumb">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bfe3d0"/><stop offset="1" stop-color="#f78ca0"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#g3)"/>
+              <circle cx="90" cy="70" r="34" fill="#fff" opacity=".6"/>
+              <circle cx="310" cy="90" r="46" fill="#fff" opacity=".35"/>
+              <path d="M0 180 Q200 120 400 185 L400 250 L0 250Z" fill="#fff" opacity=".5"/>
+              <rect x="170" y="120" width="60" height="60" rx="8" fill="#fff" opacity=".75"/>
+            </svg>
+            <span class="badge">长篇纪录</span>
+            <span class="duration">42:16</span>
+          </div>
+          <div class="work-body">
+            <h3>毕业那天我们没说再见</h3>
+            <p>四个年轻人的毕业季，所有没说出口的话都留在了镜头里。</p>
+            <div class="work-meta"><span>毕业季企划</span><span>2023 · 夏</span></div>
+          </div>
+        </article>
+
+        <article class="work" data-title="社团夜话" data-sub="校园访谈 · 第一期" data-body="深夜十一点的社团活动室，灯还亮着。我们坐下来和五位社团负责人聊了聊坚持、热爱与疲惫。这档访谈栏目没有标准答案，只有真实的声音，适合在晚上戴着耳机慢慢看。" data-tags="访谈,社团,真实">
+          <div class="thumb">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a3b52"/><stop offset="1" stop-color="#f78ca0"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#g4)"/>
+              <circle cx="130" cy="110" r="46" fill="#fff" opacity=".3"/>
+              <circle cx="250" cy="140" r="60" fill="#fff" opacity=".2"/>
+              <rect x="60" y="200" width="280" height="4" rx="2" fill="#ffd9c0" opacity=".7"/>
+              <circle cx="200" cy="90" r="20" fill="#ffd9c0" opacity=".8"/>
+            </svg>
+            <span class="badge">访谈</span>
+            <span class="duration">26:30</span>
+          </div>
+          <div class="work-body">
+            <h3>社团夜话</h3>
+            <p>五位社团负责人，聊聊坚持、热爱与疲惫的真实声音。</p>
+            <div class="work-meta"><span>校园访谈</span><span>2024 · 秋</span></div>
+          </div>
+        </article>
+
+        <article class="work" data-title="城市甜点在走路" data-sub="城市漫游 · 联动企划" data-body="泡芙与城市美食的一次联动尝试。我们沿着城市地图，用脚步丈量五家老店，记录那些藏在巷子里的甜。全片以行走镜头串联，节奏轻快，是「将校花灌成泡芙」出校园之后的一次温柔延伸。" data-tags="城市,美食,漫游">
+          <div class="thumb">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5b971"/><stop offset="1" stop-color="#bfe3d0"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#g5)"/>
+              <rect x="40" y="120" width="70" height="100" rx="8" fill="#fff" opacity=".5"/>
+              <rect x="130" y="80" width="80" height="140" rx="8" fill="#fff" opacity=".65"/>
+              <rect x="230" y="140" width="60" height="80" rx="8" fill="#fff" opacity=".45"/>
+              <rect x="310" y="100" width="60" height="120" rx="8" fill="#fff" opacity=".6"/>
+              <circle cx="200" cy="55" r="26" fill="#fff" opacity=".8"/>
+            </svg>
+            <span class="badge">联动</span>
+            <span class="duration">18:04</span>
+          </div>
+          <div class="work-body">
+            <h3>城市甜点在走路</h3>
+            <p>走出校园，用脚步丈量城市里五家藏在巷子里的老店。</p>
+            <div class="work-meta"><span>城市漫游</span><span>2024 · 冬</span></div>
+          </div>
+        </article>
+
+        <article class="work" data-title="镜头另一边的人" data-sub="幕后纪实 · 团队自述" data-body="这一次，镜头对准我们自己。摄影、剪辑、场记、出镜同学各自讲述「将校花灌成泡芙」的创作现场：那些推翻重来的夜晚，那些现场笑场的瞬间，以及为什么我们愿意一直拍下去。" data-tags="幕后,团队,纪实">
+          <div class="thumb">
+            <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9c0"/><stop offset="1" stop-color="#7a3b52"/></linearGradient></defs>
+              <rect width="400" height="250" fill="url(#g6)"/>
+              <rect x="110" y="80" width="180" height="110" rx="16" fill="#fff" opacity=".4"/>
+              <circle cx="200" cy="135" r="34" fill="#fff" opacity=".8"/>
+              <polygon points="190,120 190,150 214,135" fill="#7a3b52"/>
+              <circle cx="70" cy="60" r="20" fill="#fff" opacity=".4"/>
+              <circle cx="340" cy="200" r="28" fill="#fff" opacity=".3"/>
+            </svg>
+            <span class="badge">幕后</span>
+            <span class="duration">22:10</span>
+          </div>
+          <div class="work-body">
+            <h3>镜头另一边的人</h3>
+            <p>把镜头对准自己，讲述推翻重来的夜晚与笑场的瞬间。</p>
+            <div class="work-meta"><span>幕后纪实</span><span>2025 · 春</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERIES -->
+  <section id="series" class="series reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Brand Series</span>
+        <h2>品牌企划 · 用长期主义做甜的内容</h2>
+        <p class="lead">泡芙青年影像以季度为单位推出主题企划，把「将校花灌成泡芙」的母题延展成可持续的内容宇宙。每一个企划都有明确的情绪与视觉方向，也持续向社区开放共创名额。</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot">01</div>
+          <span class="tag">春季 · 正在更新</span>
+          <h3>泡芙日记 Vol.7：把春天装进口袋</h3>
+          <p>以「一天」为单位，跟拍七位不同专业学生从早到晚的校园轨迹。清晨的豆浆、午后的自习、夜晚的排练，全部以自然光呈现。每周三更新，社区可提交自己的「泡芙时刻」。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">02</div>
+          <span class="tag">夏季 · 企划中</span>
+          <h3>毕业放映季：最后一次一起看电影</h3>
+          <p>与多所高校联合举办露天毕业放映，播放品牌历年毕业季纪录短片，并邀请片中主人公返场对谈。现场设置泡芙甜品站，让影像与味道一起成为告别仪式。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">03</div>
+          <span class="tag">秋季 · 招募中</span>
+          <h3>青年影像工作坊：从线索到成片</h3>
+          <p>面向社区开放 30 个免费名额，由品牌导演与剪辑师授课，从选题、拍摄到后期完整走一遍流程。优秀作品将进入「将校花灌成泡芙」系列片单，获得官方推荐位。</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot">04</div>
+          <span class="tag">冬季 · 回望</span>
+          <h3>年度泡芙榜：观众票选最甜瞬间</h3>
+          <p>由社区投票选出年度最受欢迎的十个片段，制作成合集短片。入选项的创作者将获得品牌年度合作机会，并共同参与下一年度企划的选题讨论。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section id="community" class="community reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Community</span>
+        <h2>社区活力 · 甜的内容由大家一起做</h2>
+        <p class="lead">泡芙青年影像的每一帧，都离不开社区的参与。投稿、投票、工作坊、线下放映，我们持续用低门槛的方式，让更多年轻人走进影像创作，也让品牌始终保有一份真实的社区温度。</p>
+      </div>
+      <div class="comm-grid">
+        <div class="comm-item"><b>86万</b><span>社区注册伙伴</span></div>
+        <div class="comm-item"><b>4200+</b><span>年度社区投稿</span></div>
+        <div class="comm-item"><b>34</b><span>合作高校社团</span></div>
+        <div class="comm-item"><b>68</b><span>线下放映与工作坊</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICES -->
+  <section id="voices" class="reveal">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Voices</span>
+        <h2>他们这样说起泡芙</h2>
+        <p class="lead">来自社区伙伴、合作高校与创作团队成员的真实反馈。我们珍惜每一句建议，也把它们变成下一支片子的养分。</p>
+      </div>
+      <div class="quote-grid">
+        <div class="quote">
+          <p>第一次看到「将校花灌成泡芙」这个名字，以为只是玩梗。看完片子才发现，它真的把青春拍出了甜度，也拍出了重量。</p>
+          <div class="quote-author"><div class="avatar">林</div><div><b>林小满</b><small>社区创作者 · 大三</small></div></div>
+        </div>
+        <div class="quote">
+          <p>作为合作高校的指导老师，我很欣赏他们让学生自己讲故事的方式。不灌输、不摆拍，这一点在校园影像里很难得。</p>
+          <div class="quote-author"><div class="avatar">周</div><div><b>周明远</b><small>高校影像指导教师</small></div></div>
+        </div>
+        <div class="quote">
+          <p>工作坊结束后，我拍了自己的第一支短片，还进了官方片单。泡芙青年影像让普通学生也能被看见，这种感觉很好。</p>
+          <div class="quote-author"><div class="avatar">陈</div><div><b>陈一诺</b><small>工作坊学员 · 大二</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="join">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>把你的故事，交给我们拍</h2>
+        <p>无论是寝室里的小事、社团里的坚持，还是毕业前没说完的话，都值得被认真记录。加入「将校花灌成泡芙」创作社区，提交线索、参与工作坊，或者直接成为镜头里的那个人。</p>
+        <a class="btn btn-primary" href="#top" id="joinBtn">立即加入创作</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <div class="brand-logo">泡</div>
+          <div class="brand-name" style="color:#fff">泡芙<span style="color:var(--gold)">青年</span>影像</div>
+        </a>
+        <p>以「将校花灌成泡芙」为母题，持续记录真实、温暖、有活力的青年故事。让每一段青春，都甜得有理由。</p>
+      </div>
+      <div class="foot-col">
+        <h4>品牌内容</h4>
+        <a href="#works">作品精选</a>
+        <a href="#series">品牌企划</a>
+        <a href="#about">关于我们</a>
+        <a href="#voices">社区口碑</a>
+      </div>
+      <div class="foot-col">
+        <h4>参与方式</h4>
+        <a href="#join">提交故事线索</a>
+        <a href="#join">青年影像工作坊</a>
+        <a href="#join">高校合作计划</a>
+        <a href="#join">社区投稿入口</a>
+      </div>
+      <div class="foot-col">
+        <h4>联系我们</h4>
+        <a href="#top">商务合作：bd@paofu-youth.cn</a>
+        <a href="#top">媒体联络：press@paofu-youth.cn</a>
+        <a href="#top">社区运营：hello@paofu-youth.cn</a>
+        <a href="#top">工作时间：周一至周五 10:00-19:00</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 泡芙青年影像 · 将校花灌成泡芙</span>
+      <span>本页面为品牌概念展示内容</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="关闭">✕</button>
+    <h3 id="mTitle">标题</h3>
+    <div class="m-sub" id="mSub">副标题</div>
+    <div class="m-body" id="mBody">内容</div>
+    <div class="m-tags" id="mTags"></div>
+  </div>
+</div>
+
+<script>
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); }
+    });
+  },{threshold:0.12});
+  reveals.forEach(el=>io.observe(el));
+
+  // Mobile drawer
+  const drawer = document.getElementById('drawer');
+  const menuBtn = document.querySelector('.menu-btn');
+  menuBtn.addEventListener('click',()=>drawer.classList.add('open'));
+  drawer.addEventListener('click',(e)=>{
+    if(e.target===drawer || e.target.tagName==='A') drawer.classList.remove('open');
+  });
+
+  // Modal for works
+  const modal = document.getElementById('modal');
+  const mTitle = document.getElementById('mTitle');
+  const mSub = document.getElementById('mSub');
+  const mBody = document.getElementById('mBody');
+  const mTags = document.getElementById('mTags');
+  const modalClose = document.getElementById('modalClose');
+
+  document.querySelectorAll('.work').forEach(w=>{
+    w.addEventListener('click',()=>{
+      mTitle.textContent = w.dataset.title;
+      mSub.textContent = w.dataset.sub;
+      mBody.textContent = w.dataset.body;
+      mTags.innerHTML = (w.dataset.tags||'').split(',').filter(Boolean).map(t=>`<span>${t.trim()}</span>`).join('');
+      modal.classList.add('open');
+    });
+  });
+  function closeModal(){ modal.classList.remove('open'); }
+  modalClose.addEventListener('click',closeModal);
+  modal.addEventListener('click',(e)=>{ if(e.target===modal) closeModal(); });
+  document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') closeModal(); });
+
+  // Hero play -> open first work detail
+  document.getElementById('heroPlay').addEventListener('click',()=>{
+    const first = document.querySelector('.work');
+    if(first) first.click();
+  });
+
+  // Join button feedback
+  const joinBtn = document.getElementById('joinBtn');
+  joinBtn.addEventListener('click',(e)=>{
+    e.preventDefault();
+    mTitle.textContent = '加入泡芙青年影像创作社区';
+    mSub.textContent = '共创计划 · 长期开放';
+    mBody.textContent = '感谢你对「将校花灌成泡芙」的关注。我们长期开放三类参与方式：一是提交故事线索，把你身边值得被记录的人和事告诉我们；二是报名青年影像工作坊，系统学习拍摄与剪辑；三是成为镜头里的主角，参与品牌短片拍摄。请将你的姓名、学校、想讲述的故事简述发送至 hello@paofu-youth.cn，我们会在三个工作日内回复。';
+    mTags.innerHTML = '<span>故事投稿</span><span>影像工作坊</span><span>出镜参与</span><span>高校合作</span>';
+    modal.classList.add('open');
+  });
+</script>
+
+</body>
+</html>
